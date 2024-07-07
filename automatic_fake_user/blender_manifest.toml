@@ -1,0 +1,13 @@
+schema_version = "1.0.0"
+
+id = "automatic_fake_user"
+version = "1.0.1"
+name = "Automatic Fake User"
+tagline = "Never loose your data again"
+maintainer = "carlosmu | carlos.damian.munoz@gmail.com"
+type = "add-on"
+tags = ["Animation", "User Interface"]
+website = "https://blendermarket.com/products/automatic-fake-user"
+
+blender_version_min = "2.93.0"
+license = ["SPDX:GPL-3.0-or-later",]

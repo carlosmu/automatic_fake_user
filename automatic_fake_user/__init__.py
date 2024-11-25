@@ -25,7 +25,7 @@ bl_info = {
     "name": "Automatic Fake-User",
     "author": "Carlos Mu <carlos.damian.munoz@gmail.com>",
     "blender": (2, 93, 0),
-    "version": (1, 0, 0),
+    "version": (1, 1, 0),
     "category": "Interface",
     "location": "Addon Preferences, File Menu",
     "description": "Automate fake-user assigment to avoid loss of orphan datablocks",

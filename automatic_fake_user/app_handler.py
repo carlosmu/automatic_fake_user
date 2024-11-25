@@ -23,6 +23,12 @@ def set_fake_users(D, prefs):
                 mat.use_fake_user = True
             else:
                 pass
+    if prefs.images:
+        for img in D.images:
+            if not prefs.excluded in img.name:
+                img.use_fake_user = True
+            else:
+                pass
     if prefs.geometry_nodes:
         for ngr in D.node_groups:
             if ngr.type == 'GEOMETRY':

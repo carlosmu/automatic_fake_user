@@ -19,6 +19,11 @@ class AFU_Preferences(bpy.types.AddonPreferences):
         description = "Set Fake Users in all materials",
         default = False
     ) # type: ignore
+    images : bpy.props.BoolProperty(
+        name = "Images",
+        description = "Set Fake Users in all images",
+        default = False
+    ) # type: ignore
     geometry_nodes : bpy.props.BoolProperty(
         name = "Geometry Nodes",
         description = "Set Fake Users in all geometry nodes",
@@ -64,6 +69,7 @@ class AFU_Preferences(bpy.types.AddonPreferences):
         box.label(text="Assign fake-users for:", icon='PRESET')
         box.prop(self, "actions")
         box.prop(self, "materials")
+        box.prop(self, "images")
         box.prop(self, "geometry_nodes")
         box.prop(self, "shader_groups")
         box.prop(self, "worlds")

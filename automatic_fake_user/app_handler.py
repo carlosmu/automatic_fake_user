@@ -11,6 +11,12 @@ def assign_on_save(scene):
         set_fake_users(D, prefs)
 
 def set_fake_users(D, prefs):
+    if prefs.meshes:
+        for act in D.meshes:
+            if not prefs.excluded in act.name:
+                act.use_fake_user = True
+            else:
+                pass
     if prefs.actions:
         for act in D.actions:
             if not prefs.excluded in act.name:

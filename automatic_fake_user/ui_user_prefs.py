@@ -9,6 +9,11 @@ class AFU_Preferences(bpy.types.AddonPreferences):
 
     ##################
     # Data Types 
+    meshes : bpy.props.BoolProperty(
+        name = "Meshes",
+        description = "Set Fake Users in all meshes",
+        default = False
+    ) # type: ignore
     actions : bpy.props.BoolProperty(
         name = "Actions",
         description = "Set Fake Users in all actions",
@@ -67,6 +72,7 @@ class AFU_Preferences(bpy.types.AddonPreferences):
         
         box = layout.box()
         box.label(text="Assign fake-users for:", icon='PRESET')
+        box.prop(self, "meshes")
         box.prop(self, "actions")
         box.prop(self, "materials")
         box.prop(self, "images")
